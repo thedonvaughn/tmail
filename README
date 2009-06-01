@@ -5,10 +5,16 @@
     Mikel Lindsaar   maintainer
     Trans            assitant developer
     Minero Aoki      original developer   
+== NOTE:
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! THIS IS A FORK OF TMAIL HACKED TOGETHER TO WORK WITH RUBY 1.9.1 !
+! USE AT YOUR OWN DISCRETION                                      !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 
 == DESCRIPTION:
 
-!!! THIS IS A FORK OF THE ORIGINAL TMAIL FOR RUBY 1.9.1 COMPAT !!!
 
 TMail is a mail handling library for Ruby.  It abstracts a mail message into a usable object allowing you to read, set, add and delete headers and the mail body.
 
