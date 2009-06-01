@@ -1,0 +1,23 @@
+/usr/local/bin/ruby extconf.rb install tmail
+creating Makefile
+
+make
+gcc -I. -I/usr/local/include/ruby-1.9.1/i686-linux -I/usr/local/include/ruby-1.9.1/ruby/backward -I/usr/local/include/ruby-1.9.1 -I. -D_FILE_OFFSET_BITS=64  -fPIC  -O2 -g -Wall -Wno-parentheses  -fPIC -D_FILE_OFFSET_BITS=64  -o tmailscanner.o -c tmailscanner.c
+tmailscanner.c:19:16: error: re.h: No such file or directory
+tmailscanner.c: In function ‘mails_s_new’:
+tmailscanner.c:75: error: ‘struct RString’ has no member named ‘ptr’
+tmailscanner.c:77: error: ‘struct RString’ has no member named ‘len’
+tmailscanner.c: In function ‘skip_japanese_string’:
+tmailscanner.c:188: warning: implicit declaration of function ‘ismbchar’
+tmailscanner.c:189: warning: implicit declaration of function ‘mbclen’
+tmailscanner.c: In function ‘digit_p’:
+tmailscanner.c:379: error: ‘struct RString’ has no member named ‘ptr’
+tmailscanner.c:380: error: ‘struct RString’ has no member named ‘len’
+tmailscanner.c:381: error: ‘struct RString’ has no member named ‘ptr’
+tmailscanner.c:381: error: ‘struct RString’ has no member named ‘ptr’
+tmailscanner.c: In function ‘atomsym’:
+tmailscanner.c:399: error: ‘struct RString’ has no member named ‘ptr’
+tmailscanner.c: In function ‘debug_print’:
+tmailscanner.c:420: error: ‘struct RString’ has no member named ‘ptr’
+tmailscanner.c:421: error: ‘struct RString’ has no member named ‘ptr’
+make: *** [tmailscanner.o] Error 1
